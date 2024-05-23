@@ -10,7 +10,7 @@ import(
 )
 
 func callSayHelloServerStream(client pb.GreetServiceClient, names *pb.ListofNames) {
-	log.Printf("Streaming has started")
+	log.Printf("Server Streaming has started")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
